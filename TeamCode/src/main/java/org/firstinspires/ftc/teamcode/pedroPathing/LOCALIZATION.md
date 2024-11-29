@@ -9,7 +9,7 @@ which we do not know about.
 ## Setting Your Localizer
 Go to line `70` in the `PoseUpdater` class, and replace the `new ThreeWheelLocalizer(hardwareMap)`
 with the localizer that applies to you:
-* If you're using drive encoders, put `new DriveEncoderLocalizer(hardwareMap)`
+  * If you're using drive encoders, put `new DriveEncoderLocalizer(hardwareMap)`
 * If you're using two wheel odometry, put `new TwoWheelLocalizer(hardwareMap)`
 * If you're using three wheel odometry, put `new ThreeWheelLocalizer(hardwareMap)`, so basically
   don't change it from the default
