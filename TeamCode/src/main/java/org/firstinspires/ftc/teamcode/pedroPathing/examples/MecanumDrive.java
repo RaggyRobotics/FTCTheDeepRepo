@@ -6,6 +6,7 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.PIDCoefficients;
 import com.qualcomm.robotcore.util.Range;
+import com.acmerobotics.dashboard.FtcDashboard;
 
 
 @com.qualcomm.robotcore.eventloop.opmode.TeleOp(name = "MecanumDrive", group = "TeleOp")
@@ -13,9 +14,9 @@ public class MecanumDrive extends OpMode{
 
     private DcMotor leftFront,rightFront, leftRear, rightRear;
 
-    private final double Kp = 0.2;
-    private final double Ki = 0.1;
-    private final double Kd = 0.3;
+    private final double Kp = 0;
+    private final double Ki = 0;
+    private final double Kd = 0;
 
     private double[] lastError = {0,0,0,0};
     private double[] integral = {0,0,0,0};
